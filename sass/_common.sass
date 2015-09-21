@@ -48,10 +48,103 @@
 // 	+jpg(bla)
 
 
+//fonts
+@font-face
+	font-family: "PFSquereSansPro Regular"
+	src: url('fonts/pfsquaresanspro-regular.eot?h6sssa')
+	src: url('fonts/pfsquaresanspro-regular.eot?#iefixh6sssa') format("embedded-opentype"), url('fonts/pfsquaresanspro-regular.ttf?h6sssa') format("truetype"), url('fonts/pfsquaresanspro-regular.woff?h6sssa') format("woff"), url('fonts/pfsquaresanspro-regular.svg?h6sssa#icomoon') format("svg")
+	font-weight: normal
+	font-style: normal
+
+
++font("OpenSans Light", opensans-light)
++font("OpenSans Regular", opensans-regular)
++font("OpenSans Semibold", opensans-semibold)
++font("OpenSans Bold", opensans-bold)
++font("OpenSans ExtraBold", opensans-extrabold)
+
+=light
+	font-family: "OpenSans Light", Arial, sans-serif
+=reg
+	font-family: "OpenSans Regular", Arial, sans-serif
+=semi
+	font-family: "OpenSans Semibold", Arial, sans-serif
+=bold
+	font-family: "OpenSans Bold", Arial, sans-serif
+=ex
+	font-family: "OpenSans ExtraBold", Arial, sans-serif
+
+=pfs
+	font-family: "PFSquereSansPro Regular", Arial, sans-serif
+//reset
+
 body
-	font-family: Arial, sans-serif
-	font-size: 12px
+	+reg
+	font-size: 18px
 	line-height: 1.4
+	background-color: #151617
 
+h1, h2, h3, h4, h5, h6, b, strong, em, i, td, th
+	font-style: normal
+	font-weight: normal
+	
+h2
+	+semi
+	line-height: 1.2
+	b
+		+bold
 
-// common blocks
+a
+	text-decoration: none
+	
+.input
+	background-color: #fff
+	border-radius: 2px
+	font-size: 13px
+	+placeholder-color(#99a3a8)
+	padding: 11px 13px 11px
+	width: 100%
+	+reg
+	
+.btn
+	display: inline-block
+	font-size: 13px
+	text-transform: uppercase
+	color: #fff
+	border-radius: 2px 
+	padding: 11px 14px 11px 
+	+transition(all 0.25s)
+	background-color: #c1218c
+	+reg
+	&:hover
+		background-color: lighten(#c1218c, 10%)
+	&:active
+		background-color: darken(#c1218c, 10%)
+		
+.btn-big
+	display: inline-block
+	font-size: 19px
+	color: #fefefe
+	border-radius: 2px 
+	padding: 7px 12px 7px
+	+transition(all 0.25s)
+	background-color: #c1218c
+	+reg
+	&:hover
+		background-color: lighten(#c1218c, 10%)
+	&:active
+		background-color: darken(#c1218c, 10%)
+		
+.button
+	display: inline-block
+	font-size: 21px
+	color: #fff
+	border-radius: 2px 
+	padding: 10px 26px 13px
+	+transition(all 0.25s)
+	background-color: #c1218c
+	+reg
+	&:hover
+		background-color: lighten(#c1218c, 10%)
+	&:active
+		background-color: darken(#c1218c, 10%)

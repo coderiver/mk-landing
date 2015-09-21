@@ -1,1 +1,715 @@
-// Normally mainpage styles
+.out
+	min-width: 1024px
+	overflow: hidden
+	
+.header
+	background: #000 
+	&__inner
+		max-width: 960px
+		margin: 0 auto
+		+clr
+		padding: 10px 0
+	&__phone
+		float: right
+		font-size: 18px
+		+pfs
+		color: #9fafb8 
+		padding: 6px 0 
+.logo
+	float: left
+	img
+		max-width: 100%
+
+.nav
+	background: #1d2021
+	border-bottom: 2px solid #74b42c 
+	border-top: #323537 1px solid
+	&__list
+		font-size: 0
+		text-align: center
+		max-width: 960px
+		margin: 0 auto 
+		border-left: #323537 1px solid
+		li
+			width: 16.66%
+			display: inline-block
+			a
+				display: block
+				color: #9fafb8
+				font-size: 16px
+				border-right: #323537 1px solid
+				cursor: pointer
+				padding: 19px 10px 
+				+transition(background 0.25s)
+				&:hover
+					background: #000 
+
+.client
+	overflow: hidden
+	padding: 59px 0 0
+	text-align: center
+	color: #fff 
+	&__inner
+		margin: 0 auto
+		max-width: 580px
+		position: relative
+		&:before, &:after
+			content: "" 
+			position: absolute
+		&:before
+			right: 100%
+			+s(clients-left)
+			bottom: -10px
+		&:after
+			left: 100%
+			+s(clients-right)
+			bottom: -13px
+	&__title
+		position: relative
+		display: inline-block
+		padding-bottom: 11px
+		font-size: 0
+		margin-bottom: 15px
+		span
+			text-shadow: 3.7px 3.3px 3px black
+			color: #fff
+			font-size: 25px
+			line-height: 27px
+			+light
+			position: absolute
+			bottom: 0
+			right: 11px
+	p
+		margin-bottom: 30px
+		+semi
+	&__form
+		max-width: 530px
+		margin: 0 auto 9px
+
+
+.field
+	position: relative
+	padding: 0 144px 0 0
+	max-width: 525px
+	margin: 0 auto 
+	.btn
+		position: absolute
+		top: 0
+		right: 0
+		width: 130px
+
+.label
+	color: #f2f2f2
+	+light
+	font-size: 17px
+	line-height: 1
+	display: block
+	padding: 7px 0
+	
+.m-counter
+	&__title, &__text
+		display: block
+	&__title
+		color: #f9ea13
+		+bold
+		font-size: 41px
+		line-height: 42px
+		margin-bottom: 13px
+	&__text
+		font-size: 19px
+		margin-bottom: 7px
+	&__timer
+		min-height: 110px 
+		
+.bonus
+	background: url(../img/percent.png) top center #f9ea13 
+	text-align: center
+	padding: 30px 0 42px 
+	&__inner
+		max-width: 940px
+		margin: 0 auto 
+	h2
+		margin-bottom: 30px
+
+.price
+	&__text
+		background: url(../img/svg/price.svg) no-repeat center center
+		padding: 73px 0 0 
+		height: 224px 
+		margin-bottom: 12px
+		span
+			color: #cc2696
+			+bold
+			font-size: 57px
+			line-height: 1
+			padding: 5px 0
+			display: inline-block 
+			small
+				font-size: 33px
+	&__info
+		ul
+			display: inline-block
+			text-align: left
+			padding: 0 0 23px 
+		p, li
+			+semi
+			line-height: 1
+			b
+				+bold
+		p
+			font-size: 21px	
+			color: #c1218c	
+			margin-bottom: 25px	
+		li
+			color: #000
+			font-size: 19px
+			position: relative
+			padding: 9px 0 9px 57px 
+			.icon
+				position: absolute
+				top: 50%
+				&.icon-delivery
+					font-size: 29px
+					left: 0
+					margin-top: -15px
+				&.icon-return
+					font-size: 30px
+					left: 7px
+					margin-top: -15px
+				&.icon-money
+					font-size: 23px
+					left: 1px
+					margin-top: -12px
+	.more
+		margin-bottom: 25px
+	h2
+		font-size: 25px
+
+.more
+	cursor: pointer
+	+light
+	color: #27aaca
+	font-size: 22px
+	display: inline-block
+	border-bottom: 1px dotted #2caccb
+	
+.way
+	text-align: center
+	display: none
+	h2
+		font-size: 27px
+	&__list
+		font-size: 0
+		li
+			display: inline-block
+			vertical-align: top
+			width: 225px
+			line-height: 1.2
+			margin: 0 0 27px 
+			position: relative
+			&:last-child
+				&:after
+					display: none 
+			&:after
+				content: "" 
+				position: absolute
+				top: 71px
+				left: 100%
+				+svg(arr-right, 21, 36)
+				margin: 0 0 0 -10px 
+			span, small
+				display: block
+			span
+				font-size: 16px
+				color: #000
+				+semi 
+			small
+				color: #010101
+				font-size: 13px
+				+reg
+				max-width: 170px
+				margin: 0 auto
+			div
+				margin: 0 0 14px 
+			i
+				display: block
+				position: relative
+				width: 184px
+				height: 184px
+				+cover
+				background-repeat: no-repeat
+				margin: 0 auto 14px
+				&.is-card
+					background-image: url(../img/icons/card.png)
+				&.is-bonus
+					background-image: url(../img/icons/bonus.png)
+				&.is-pack
+					background-image: url(../img/icons/pack.png)
+				&.is-delivery
+					background-image: url(../img/icons/delivery.png)
+.answers
+	font-size: 0
+	padding: 0 0 86px 
+	.answer
+		margin: 0 47px 
+
+.answer
+	+semi
+	color: #fff
+	font-size: 23px
+	text-align: center
+	width: 61px
+	line-height: 1
+	padding: 17px 0 21px
+	border-radius: 50%
+	display: inline-block
+	position: relative
+	&_yes
+		background-color: #c1218c
+		&:before
+			top: 28px
+			right: 100%
+			+s(yes)
+	&_no
+		background-color: #2caccb
+		&:before
+			top: 100%
+			right: 28px
+			+s(no)
+	&:before
+		content: ""
+		position: absolute
+		
+.partners
+	text-align: center
+	padding: 18px 0 30px 	
+	background: url(../img/percent2.png) top center 
+	&__inner
+		max-width: 880px
+		margin: 0 auto 
+	h2
+		font-size: 29px
+		padding: 25px 0 22px 95px
+		position: relative
+		display: inline-block
+		i
+			position: absolute
+			top: 0
+			left: 0
+	ul
+		font-size: 0
+		li
+			display: inline-block
+			vertical-align: middle
+			width: 20%
+			padding: 11px 0 12px
+			a
+				display: inline-block
+				&.is-carlo
+					+s(carlo)
+				&.is-piazza
+					+s(piazzaitalia)
+				&.is-marks
+					+s(marks)
+				&.is-puma
+					+s(puma)
+				&.is-loreal
+					+s(loreal)
+				&.is-diva
+					+s(diva)
+				&.is-iren
+					+s(iren)
+				&.is-milavitsa
+					+s(milavitsa)
+				&.is-lupilu
+					+s(lupilu)
+				&.is-sassofono
+					+s(sassofono)
+				&.is-berghoff
+					+s(berghoff)
+				&.is-florens
+					+s(florens)
+				&.is-promin
+					+s(promin)
+				&.is-sodasan
+					+s(sodasan)
+				&.is-mtf
+					+s(mtf)
+				&.is-palvira
+					+s(palvira)
+				&.is-angel
+					+s(angel)
+				&.is-luisa
+					+s(luisa)
+				&.is-frosch
+					+s(frosch)
+				&.is-reima
+					+s(reima)
+				&.is-umbro
+					+s(umbro)
+				&.is-colins
+					+s(colins)
+				&.is-champion
+					+s(champion)
+				&.is-icepeak
+					+s(icepeak)
+				&.is-mustang
+					+s(mustang)
+				&.is-timberland
+					+s(timberland)
+				&.is-ugg
+					+s(ugg)
+				&.is-levis
+					+s(levis)
+				&.is-adidas
+					+s(adidas)
+				&.is-pb
+					+s(pb)
+				&.is-versace
+					+s(versace)
+				&.is-bershka
+					+s(bershka)
+				&.is-wrangler
+					+s(wrangler)
+				&.is-zara
+					+s(zara)
+				&.is-vs
+					+s(vs)
+				&.is-bgl
+					+s(bgl)
+				&.is-levante
+					+s(levante)
+				&.is-valeri
+					+s(valeri)
+				&.is-conte
+					+s(conte)
+				&.is-stradivarius
+					+s(stradivarius)
+				&.is-luijo
+					+s(luijo)
+				&.is-dutti
+					+s(dutti)
+				&.is-bulgari
+					+s(bulgari)
+				&.is-loriblu
+					+s(loriblu)
+				&.is-homeline
+					+s(homeline)
+				&.is-evisu
+					+s(evisu)
+				&.is-polaroid
+					+s(polaroid)	
+				&.is-diesel
+					+s(diesel)	
+				&.is-glo-story
+					+s(glo-story)	
+				&.is-naturino
+					+s(naturino)	
+				&.is-justor
+					+s(justor)	
+				&.is-giulia
+					+s(giulia)	
+				&.is-bikkembergs
+					+s(bikkembergs)	
+				&.is-richmond
+					+s(richmond)	
+				&.is-galliano
+					+s(galliano)
+				&.is-fitch
+					+s(fitch)
+				&.is-hollister
+					+s(hollister)
+				&.is-frabosk
+					+s(frabosk)
+				&.is-nb
+					+s(nb)
+				&.is-chicco
+					+s(chicco)
+				&.is-tally
+					+s(tally)
+				&.is-primal
+					+s(primal)
+				&.is-giorgio
+					+s(giorgio)
+				&.is-blizzarini
+					+s(blizzarini)
+				&.is-valentino
+					+s(valentino)
+				&.is-franchi
+					+s(franchi)
+				&.is-imperia
+					+s(imperia)
+				&.is-jadea
+					+s(jadea)
+				&.is-karree
+					+s(karree)
+				&.is-nautic
+					+s(nautic)
+				&.is-bormioli
+					+s(bormioli)
+				&.is-playnew
+					+s(playnew)
+				&.is-carters
+					+s(carters)
+				&.is-intimissimi
+					+s(intimissimi)
+				&.is-berivse
+					+s(berivse)
+				&.is-odyagaiko
+					+s(odyagaiko)
+				&.is-lipinskaya
+					+s(lipinskaya)
+				&.is-alba
+					+s(alba)
+				&.is-basconi
+					+s(basconi)
+				&.is-svetski
+					+s(svetski)
+					//
+				&.is-nike
+					+s(nike)
+				&.is-crocs
+					+s(crocs)
+				&.is-plato
+					+s(plato)
+				&.is-custo
+					+s(custo)
+				&.is-lcarvari
+					+s(lcarvari)
+				&.is-sebastiano
+					+s(sebastiano)
+				&.is-pinkwoman
+					+s(pinkwoman)
+				&.is-beyu
+					+s(beyu)
+				&.is-oodji
+					+s(oodji)
+				&.is-luminarc
+					+s(luminarc)
+				&.is-dept
+					+s(dept)
+				&.is-phytomer
+					+s(phytomer)
+				&.is-mozah
+					+s(mozah)
+				&.is-ennalevoni
+					+s(ennalevoni)
+	&_dark
+		color: #fff 
+	&_pink
+		color: #000			
+		background: url(../img/percent-pink.png) top center #cc2696 
+	&_green
+		color: #000
+		background: url(../img/percent-green.png) top center #0cd479
+	&_first
+		h2
+			margin-bottom: 30px
+	&_second
+		h2
+			margin-bottom: 10px
+		ul
+			li
+				padding: 0 0 7px
+	&_third
+		ul
+			li
+				padding: 7px 0 11px 
+
+.clock-six
+	+svg(clock-six, 81, 81)
+.clock-twelve
+	+svg(clock-twelve, 81, 81)
+.clock-sixteen
+	+svg(clock-sixteen, 81, 81)
+.clock-twenty
+	+svg(clock-twenty, 81, 81)
+	
+.bot
+	padding: 72px 0 100px 
+	text-align: center
+	&__inner
+		max-width: 620px
+		margin: 0 auto
+	p
+		color: #fff
+		font-size: 23px
+		line-height: 35px
+		margin-bottom: 60px
+	ul
+		font-size: 0
+		margin-bottom: 50px
+		li
+			display: inline-block
+			vertical-align: top
+			padding: 0 8px 
+			a
+				display: inline-block
+				&.is-fb
+					+s(big-fb)
+				&.is-vk
+					+s(big-vk)
+
+.form
+	background: rgba(#000, 0.5)
+	padding: 8px 0 18px 
+	margin-bottom: 40px
+	.label
+		padding: 7px 0 10px 
+		
+.footer
+	background: #000 
+	padding-bottom: 105px
+	&__top
+		padding: 14px 0 15px
+	&__bottom
+		border-top: 1px solid #2b2a29
+		border-bottom: 1px solid #2b2a29
+		padding: 25px 0 50px 
+		background-color: #0d0e10
+	&__inner
+		+clr
+		max-width: 940px
+		margin: 0 auto
+	.social
+		float: left
+		margin: 0 0 0 -20px 
+	.devices
+		float: right
+		padding: 3px 0 2px 
+	&__col
+		width: 25%
+		float: left
+	&__label
+		color: #a9b4ba
+		font-size: 24px
+		line-height: 1
+		+pfs
+		display: block
+		margin-bottom: 18px
+	ul
+		&.is-under
+			li
+				a
+					text-decoration: underline
+					padding: 0 0 0 35px 
+					&:before
+						content: "" 
+						position: absolute
+						top: 50%
+						+translateY(-50%)
+					&.is-kasta
+						&:before
+							+s(kasta)
+							left: 0
+					&.is-shafa
+						&:before
+							+s(shafa)
+							left: 4px
+					&.is-shopium
+						&:before
+							+s(shopium)
+							left: 2px
+					&.is-np
+						&:before
+							+s(np)
+							left: 0
+					&.is-wayforpay
+						&:before
+							+s(wayforpay)
+							left: 2px
+	li
+		a
+			color: #99a3a8
+			font-size: 16px
+			+pfs
+			line-height: 30px
+			display: inline-block
+			position: relative
+			+transition(color 0.25s)
+			&:hover
+				color: #fff 
+	&__copy
+		clear: both
+		text-align: right
+		color: #a9b4ba
+		font-size: 13px
+		+pfs
+		padding: 20px 0 0 
+.social
+	font-size: 0
+	li
+		display: inline-block
+		vertical-align: middle
+		margin: 0 8px 
+		a
+			display: inline-block
+			&.is-fb
+				+s(fb)
+			&.is-twitter
+				+s(twitter)
+			&.is-gp
+				+s(gp)
+			&.is-youtube
+				+s(youtube)
+			&.is-vk
+				+s(vk)
+			&.is-od
+				+s(od)
+
+.devices
+	font-size: 0
+	li
+		display: inline-block
+		vertical-align: middle
+		margin: 0 0 0 21px 
+		span			
+			font-size: 16px
+			color: #99a3a8
+			line-height: 24px
+			+pfs
+		a
+			display: inline-block
+			&.is-apple
+				+s(apple)
+			&.is-android
+				+s(android)
+
+//clock
+.flip-clock-wrapper 
+	display: inline-block
+	width: auto
+	margin: 0
+	ul 
+		width: 40px
+		height: 57px
+		margin: 0 5px 
+		li 
+			line-height: 57px
+			a 
+				overflow: hidden
+				div 
+					div.inn
+						font-size: 50px
+				div.up
+					&:after
+						top: 27px
+.flip-clock-divider
+	width: 20px
+	height: 57px
+	.top, .bottom
+		display: none	
+	.flip-clock-label
+		font-size: 14px
+		+reg
+		color: #fff
+		top: 100%
+		left: 100%
+		right: auto
+		width: 90px
+		text-align: center
+		text-transform: capitalize
+		margin: 5px 
+	&:first-child
+		.flip-clock-label
+			left: 0
